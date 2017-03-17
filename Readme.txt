@@ -2,25 +2,15 @@
 
 Presentation for M.Sc project, Counting Principles, Permutation and Combination
 
-
-
-
 ** RU **
 
-Презентация для защиты мастерской диссертации
-
-
+РџСЂРµР·РµРЅС‚Р°С†РёСЏ РґР»СЏ Р·Р°С‰РёС‚С‹ РјР°СЃС‚РµСЂСЃРєРѕР№ РґРёСЃСЃРµСЂС‚Р°С†РёРё
 
 ===================================================
 
-
-
 Original sources: https://www.overleaf.com/articles/counting-principles-permutation-and-combination/dxqqkvkvnhgz#.WMkkwzuLTIV
-Author:           Hemanga
+Author:           HEMANGA DUTTA
 License:          LaTeX Project Public License 1.3c
 
-
-
 Status:           added by Papeeria Team, maintenance on demand
-
 Last update:      17 Mar 2017 
