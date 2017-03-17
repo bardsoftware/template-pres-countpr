@@ -1,0 +1,513 @@
+\documentclass{beamer}
+
+\mode<presentation>{
+\usetheme{Madrid}
+%\usecolortheme{beaver}
+}
+\usepackage[utf8]{inputenc}
+\usepackage{default}
+\usepackage[portuguese]{babel}
+\usepackage{pgfplots}
+\pgfplotsset{/pgf/number format/use comma,compat=newest}
+\usepackage{color}
+\usepackage{amsmath,amsfonts,amssymb}
+\usepackage{hyperref}
+\usepackage{tikz}
+\usepackage{enumerate}
+
+
+
+
+
+
+\usebackgroundtemplate{%
+\tikz\node[opacity=0.1] {\includegraphics[height=\paperheight,width=\paperwidth]{tu.jpg}};}
+
+
+\title{COUNTING PRINCIPLES, PERMUTATION AND COMBINATION}
+\author{ \bf  HEMANGA DUTTA}
+\institute[]{\includegraphics[height=1in]{tu.jpg}{\vspace{.3cm}}\\ \bf M.Sc IN MATHEMATICS{\vspace{.3cm}} \\ ROLL NO. : MSM14039{\vspace{.3cm}}\\ {\bf TEZPUR UNIVERSITY}}
+\date{\hspace{8cm} }
+
+\begin{document}
+
+\begin{frame}
+ \maketitle 
+\end{frame}
+
+%\begin{frame}
+%\frametitle{Sumário}
+ %\tableofcontents
+%\end{frame}
+
+\section{}
+\begin{frame}
+\frametitle{OUTLINE} 
+In this presentation, we are going to discuss about, 
+\begin{enumerate}
+\item {\bf Four Basic Counting Principles} 
+    \begin{enumerate}
+      \item Addition
+      \item Multiplication
+\item Subtraction
+\item Division{\vspace{.5cm}}
+\end{enumerate}
+\item {\bf Permutation}
+    \begin{enumerate}
+\item Permutation of Multiset{\vspace{.5cm}}
+\end{enumerate}
+\item {\bf Combination}
+ \begin{enumerate}
+\item Combination of multiset 
+\end{enumerate}
+\end{enumerate}
+
+\end{frame}
+
+\section{}
+\begin{frame}
+\frametitle{Four Basic Counting Principles} 
+There are {\it \bf FOUR} basics counting principle .they are,{\vspace{.5cm}}
+    \begin{enumerate}
+\item {\Large \bf  Addition} {\vspace{.5cm}}
+\item {\Large \bf  Multiplication}{\vspace{.5cm}}
+\item {\Large \bf  Subtraction}{\vspace{.5cm}}
+\item {\Large \bf Division }
+\end{enumerate}
+  
+\end{frame}
+
+\section{}
+\begin{frame}
+\frametitle{Four Basic Counting Principles}
+{ \Large {\bf ADDITION PRINCIPLE :}}
+    { \it{ Suppose that a set $S$ is partitioned into parts $S_1$,$S_2$,\dots ,$S_m$. The number of of objects in S can be determined by finding the number of objects in each parts, and adding the numbers so obtaine:}}
+    $$|S| = |S_1|+|S_2|+\dots +|S_m|$$ 
+    
+    
+    
+    
+    
+    
+    
+\end{frame}
+
+
+
+\section{}
+\begin{frame}
+\frametitle{Four Basic Counting Principles}
+
+{ \Large {\bf ADDITION PRINCIPLE :}}
+    { \it{ Suppose that a set $S$ is partitioned into parts $S_1$,$S_2$,\dots ,$S_m$. The number of of objects in S can be determined by finding the number of objects in each parts, and adding the numbers so obtaine:}}
+    $$|S| = |S_1|+|S_2|+\dots +|S_m|$$ 
+    { {\bf Example : }A student wishes to take either a mathematics course or a biology course, but not both. If there are 4 mathematics courses and 3 biology courses for which the student has the necessary prerequisites, then the student can choose a course to take in 4+3=7 ways.}\\ 
+
+ 
+ \end{frame} 
+ 
+ \section{}
+ \begin{frame}
+\frametitle{Four Basic Counting Principles}
+ {\Large \bf MULTIPLICATION PRINCIPLE :} 
+  {\it Let $S$ be a set of ordered pair $ (a,b) $ of objects, where the first object $a$ comes from a set of size $p$, and for each choice of $a$ there are $q$ choices for object $b$. Then the size of $S$ is  $ p\times q:$}\\$$|S|= p \times q.$$ 
+  \end{frame}
+ 
+ \section{}
+ \begin{frame}
+\frametitle{Four Basic Counting Principles}
+
+ {\Large \bf MULTIPLICATION PRINCIPLE :} 
+  {\it Let $S$ be a set of ordered pair $ (a,b) $ of objects, where the first object $a$ comes from a set of size $p$, and for each choice of $a$ there are $q$ choices for object $b$. Then the size of $S$ is  $ p\times q:$}\\$$|S|= p \times q.$$
+   The multiplication principle is actually a consequence of the addition principle. Let $a_1,a_2,\dots,a_p$ be the $p$ different choices for the object $a$. We partition $S$ into parts $S_1,S_2
+  ,\dots,S_p$ where $S_i$ is the set of ordered pairs in $S$ with first object $a_i$, ($i$=1,2,\dots,$p$). The size of each $|S_i|$ is $q$; hence, by the addition principle,
+  \begin{center}
+  $|S|=|S_1|+|S_2|+\dots+|S_p|$\\
+$=q+q+\dots+q$\\
+     $ =p\times q$
+   \end{center} 
+   \end{frame}
+\begin{frame}
+\frametitle{Four Basic Counting Principles}
+  {\bf Example 1: }A student is to take two courses. The first meets at any one of 3 hours in the morning, and the second at any one of 4 hours in the afternoon. The number of schedules that are possible for the student is $ 3 \times 4 = 12 $.\\
+  \end{frame}   
+   
+   
+   
+\begin{frame}
+\frametitle{Four Basic Counting Principles }
+  {\bf Example 1: }A student is to take two courses. The first meets at any one of 3 hours in the morning, and the second at any one of 4 hours in the afternoon. The number of schedules that are possible for the student is $ 3 \times 4 = 12 $.\\
+  
+  {\bf Example 2: }Chalk comes in three different length, 8 different colors, and 4 different diameters. How many different kind of chalk are there ?\\
+{\bf Ans. }To determine a piece of chalk we carry out 3 different task : choose a length, choose a color, choose a diameter. By the multiplication principle, there are  $   3\times8\times4 = 96 $ different kinds of chalk.
+\end{frame}
+
+ \section{}
+ \begin{frame}
+\frametitle{Four Basic Counting Principles}
+{\Large \bf SUBTRACTION PRINCIPLE : }
+{\it Let $A$ be a set and let  $U$ be a larger set containing $ A$. Let 
+                     $$\overline{A}= \{ x\in U: x \not\in A\} $$
+be the complement of $ A$ in $U$. Then the number $|A|$ of objects in $A$ is given by the rule 
+       $$|A|=|U|-|\overline{A}|.$$}
+\end{frame}
+
+
+
+
+ \section{}
+ \begin{frame}
+\frametitle{Four Basic Counting Principles}
+{\Large \bf SUBTRACTION PRINCIPLE : }
+{\it Let $A$ be a set and let  $U$ be a larger set containing $ A$. Let 
+                     $$\overline{A}= \{ x\in U: x \not\in A\} $$
+be the complement of $ A$ in $U$. Then the number $|A|$ of objects in $A$ is given by the rule 
+       $$|A|=|U|-|\overline{A}|.$$}
+In applying the subtraction principle, the set $U$ is usualy some natural set consisting of all the objects under discussion (the so-called universal set). Using the subtraction principle makes sense only if it is esier to count the number of objects in $U$ and $|\overline{A}|$ then to count the number of objects in $A$.
+\end{frame}
+
+
+ \section{}
+ \begin{frame}
+\frametitle{Four Basic Counting Principles}
+{\bf Example 1: }Count the number of integers between 1 and 600, which are not divisible by 6.\\
+{\bf Ans . } Here $U$ = the whole set = 600 \\
+        $A$ = \{$x:x$ is between 1 and 600 and not divisible  by 6 \}
+   \begin{eqnarray*}
+           \overline{A} &=& \{x : x \not\in A \} \\
+                       &=& \{ x : x/6 \}\\
+                      &=&600/6\\
+                           &=& 100\\
+                        therefore,\\
+                            |A| &=& |U|-\overline{|A|} \\
+                             &=&600-100\\
+                               &=&500\\
+                 \end{eqnarray*}
+
+\end{frame}
+
+ \section{}
+ \begin{frame}
+\frametitle{Four Basic Counting Principles}
+{\Large \bf  DIVISON PRINCIPLE :}
+{\it Let $S$ be a finite set that is partitioned into $k$ parts in such a way that each part contains the same number of objects. Then the number of parts in the partition is given by the rule \\
+                                               $$k = \frac{|S|}{ number \hspace{.2cm} of \hspace{.2cm}objects\hspace{.2cm} in\hspace{.2cm} a\hspace{.2cm} part }$$}
+\end{frame}
+
+
+ \section{}
+ \begin{frame}
+\frametitle{Four Basic Counting Principles}
+{\Large \bf  DIVISON PRINCIPLE :}
+ {\it Let $S$ be a finite set that is partitioned into $k$ parts in such a way that each part contains the same number of objects. Then the number of parts in the partition is given by the rule \\
+                                               $$k = \frac{|S|}{ number \hspace{.2cm} of \hspace{.2cm}objects\hspace{.2cm} in\hspace{.2cm} a\hspace{.2cm} part }$$}
+ Thus, we can determine the number of parts if we know the number of objects in $S$
+ and the common value of the number of objects in the parts.{\vspace{1cm}}
+ {\bf Example : } There are 740 pigeons in a collection of pigeonholes. If each pigeonhole contains 5 pigeons, the number of pigeonholes equals\\
+                                             $$740/5 =148$$
+\end{frame}
+
+\section{}
+ \begin{frame}
+\frametitle{Permutations}
+Let  $r$ be a positive integer. By an $r$-$permutation$ of a set $S$ of $ n$ elements, we understand an ordered arrangement of $ r$ of the $n$ elements.
+\end{frame}
+
+\section{}
+ \begin{frame}
+\frametitle{Permutations}
+Let  $r$ be a positive integer. By an $r$-$permutation$ of a set $S$ of $ n$ elements, we understand an ordered arrangement of $ r$ of the $n$ elements. If 
+$$S =  \{   a ,     b   ,c  \} $$
+ then the 1-$permutation$ of $S$ are
+                  $$a \hspace{2cm}     b        \hspace{2cm} c$$
+\end{frame}
+
+\section{}
+ \begin{frame}
+\frametitle{Permutations}
+Let  $r$ be a positive integer. By an $r$-$permutation$ of a set $S$ of $ n$ elements, we understand an ordered arrangement of $ r$ of the $n$ elements. If 
+$$S =  \{   a ,     b   ,c  \} $$
+ then the 1-$permutation$ of $S$ are
+                  $$a \hspace{2cm}     b        \hspace{2cm} c$$
+\\the six 2-$permutations$ of $S$ are   
+$$ab \hspace{1cm} ac  \hspace{1cm} ba \hspace{1cm}                bc      \hspace{1cm}ca \hspace{1cm}         cb $$  
+\end{frame}
+
+\section{}
+ \begin{frame}
+\frametitle{Permutations}
+Let  $r$ be a positive integer. By an $r$-$permutation$ of a set $S$ of $ n$ elements, we understand an ordered arrangement of $ r$ of the $n$ elements. If 
+$$S =  \{   a ,     b   ,c  \} $$
+ then the 1-$permutation$ of $S$ are
+                  $$a \hspace{2cm}     b        \hspace{2cm} c$$
+\\the six 2-$permutations$ of $S$ are   
+$$ab \hspace{1cm} ac  \hspace{1cm} ba \hspace{1cm}                bc      \hspace{1cm}ca \hspace{1cm}         cb $$  
+the six 3-$permutations$ of $S$ are
+\\
+                           $$abc    \hspace{1cm}acb \hspace{1cm}        bac \hspace{1cm} bca \hspace{1cm}        cab        \hspace{1cm} cba$$  
+\end{frame}
+
+\section{}
+ \begin{frame}
+\frametitle{Permutations}
+{\bf Theorem 1 : }For  $n$ and $r$ positive integers with $ r \le n$.\\
+     $$P( n , r) = n \times (n-1) \times ......\times (n - r + 1)$$ 
+\end{frame}
+
+\section{}
+ \begin{frame}
+\frametitle{Permutations}
+{\bf Theorem 1 : }For  $n$ and $r$ positive integers with $ r \le n$.\\
+     $$P( n , r) = n \times (n-1) \times ......\times (n - r + 1)$$  
+{\bf Results :} For a non-negative integer n, we define $n$! by 
+                 $$n!=n\times(n-1)\times\dots\times2\times1$$
+   with the convention that 0!=1. We may then write 
+                $$P(n,r)=\frac{n!}{(n-r)!}$$
+                \end{frame}
+
+\section{}
+ \begin{frame}
+\frametitle{Permutations}
+{\bf Theorem 1 : }For  $n$ and $r$ positive integers with $ r \le n$.\\
+     $$P( n , r) = n \times (n-1) \times ......\times (n - r + 1)$$  
+{\bf Results :} For a non-negative integer n, we define $n$! by 
+                 $$n!=n\times(n-1)\times\dots\times2\times1$$
+   with the convention that 0!=1. We may then write 
+                $$P(n,r)=\frac{n!}{(n-r)!}$$
+ {\bf Example 1 :  } The number of 4-letter ``words" that can be formed by using each of letters $a$, $b$, $c$, $d$, $e$ at most once is  $P(5,4)$, and this equals  5!/ (5-4)!  = 120. The number of 5-letter words equals $P(5,5)$, which is also 120 .
+\end{frame}
+
+\section{}
+ \begin{frame}
+\frametitle{Permutations}
+{\bf Theorem 2: } The number of circular $r$-permutations of a set of n elements is given by
+                               $$\frac{P(n,r)}{r}   =  \frac{n!}{r\times(n-r)!}$$
+In particular, the number of circular permutations of $n$ elements is $(n-1)!$
+\end{frame}
+
+\section{}
+ \begin{frame}
+\frametitle{Permutation}
+{\bf Theorem 2: } The number of circular $r$-permutations of a set of n elements is given by
+                               $$\frac{P(n,r)}{r}   =  \frac{n!}{r\times(n-r)!}$$
+In particular, the number of circular permutations of $n$ elements is $(n-1)!$
+
+{\bf Example :}
+
+\end{frame}
+
+\section{}
+ \begin{frame}
+\frametitle{Permutations}
+There are some results in permutation. they are {\vspace{.5cm}}
+   \begin{enumerate}
+     \item $P(n,n)=n!${\vspace{.3cm}}
+     \item $P(n,0)=\frac{n!}{(n-0)!}=1${\vspace{.3cm}}
+     \item $P(n,1)=1${\vspace{.3cm}}
+     \item $P(n,n-1)=n!$
+\end{enumerate}
+\end{frame}
+
+\section{}
+ \begin{frame}
+\frametitle{Permutation of Multiset}
+If $S$ is a multiset, an $r$-$permutation$ of $S$ is an ordered arrangement of $r$ of the objects of $S$. If the total number of objects of $S$ is $n$ (counting repetitions), then an $n$-permutation of $S$ will also be called a $permutation$ of $S$.
+\end{frame}
+
+
+\section{}
+ \begin{frame}
+\frametitle{Permutation of Multiset}
+If $S$ is a multiset, an $r$-$permutation$ of $S$ is an ordered arrangement of $r$ of the objects of $S$. If the total number of objects of $S$ is $n$ (counting repetitions), then an $n$-permutation of $S$ will also be called a $permutation$ of $S$. For example, if $S$= $\{2.a, 1.b, 3.c\}$, then
+       $$acbc \hspace{1cm} cbcc$$
+       are 4-permutations of $S$, while
+       $$abccca$$
+is a permutation of $S$.
+\end{frame}
+
+\section{}
+ \begin{frame}
+\frametitle{Permutation of Multiset}
+If $S$ is a multiset, an $r$-$permutation$ of $S$ is an ordered arrangement of $r$ of the objects of $S$. If the total number of objects of $S$ is $n$ (counting repetitions), then an $n$-permutation of $S$ will also be called a $permutation$ of $S$. For example, if $S$= $\{2.a, 1.b, 3.c\}$, then
+       $$acbc \hspace{1cm} cbcc$$
+       are 4-permutations of $S$, while
+       $$abccca$$
+is a permutation of $S$.\\{\bf Remark :} The multiset $S$ has no 7-permutations since 7 is greater then  2+1+3=6, the number of objects of $S$.
+\end{frame}
+
+\section{}
+ \begin{frame}
+\frametitle{Permutation of Multiset}
+  We count the number of $r$-permutations of a multiset $S${\vspace{1cm}}
+\begin{enumerate}
+\item each of whose repetition number is infinite.{\vspace{1cm}}
+\end{enumerate}
+
+\end{frame}
+
+\section{}
+ \begin{frame}
+\frametitle{Permutation Of Multiset}
+  We count the number of $r$-permutations of a multiset $S${\vspace{1cm}}
+\begin{enumerate}
+\item each of whose repetition number is infinite.{\vspace{1cm}}
+\item each of whose repetition number is finite.
+\end{enumerate}
+
+\end{frame}
+
+\section{}
+ \begin{frame}
+\frametitle{Permutation of Multiset}
+{\bf Theorem 1:} Let S be a multiset with objects of k different types, where each has an infinite repetition number. Then the number of $r$-permutations of $S$ is $k^r$.
+\end{frame}
+
+\section{}
+ \begin{frame}
+\frametitle{Permutation of Multiset}
+{\bf Theorem 1:} Let S be a multiset with objects of k different types, where each has an infinite repetition number. Then the number of $r$-permutations of $S$ is $k^r$.\\{\vspace{1cm}}
+{\bf Example 1:} What is the number of ternary numerals with at most 4 digits.\\
+{\bf Ans. } The answer to this question is the number of 4-permutations of the multiset  $\{ \infty.0, \infty.1, \infty.2 \}$   or of the multiset $ \{ 4.0, 4.1, 4.2 \} $. By previous Theorem, this number equals $3^4=81$.
+\end{frame}
+
+\section{}
+ \begin{frame}
+\frametitle{Permutation of Multiset}
+{\bf Theorem 2: }Let $S$ be a multiset with objects of $k$ different types with finite repetition numbers $n_1,n_2,\dots,n_k$, respectively. Let the size of $S$ be $n=n_1+n_2+\dots+n_k$. Then the number of permutations of $S$ equals 
+     $$ \frac{n!}{n_1!n_2!\dots n_k!}.$$
+     \end{frame}
+
+\section{}
+ \begin{frame}
+\frametitle{Permutation of Multiset}
+{\bf Theorem 2: }Let $S$ be a multiset with objects of $k$ different types with finite repetition numbers $n_1,n_2,\dots,n_k$, respectively. Let the size of $S$ be $n=n_1+n_2+\dots+n_k$. Then the number of permutations of $S$ equals 
+     $$ \frac{n!}{n_1!n_2!\dots n_k!}.$$
+{\bf Example 2: } The number of  permutation of the letters in the word MISSISSIPPI is
+ $$\frac{11!}{1!4!4!2!},$$
+ since this number equals the number of permutations of the multiset $\{ 1.M, 4.I, 4.S, 2.P \}$
+\end{frame}
+
+\section{}
+ \begin{frame}
+\frametitle{Combinations}
+Let $r$ be a non negative integer. By an $r$-$combination$ of a set $S$ of $n$ elements, we understand an unordered selection of $r$ of the $n$ objects of $S$.
+\end{frame}
+
+\section{}
+ \begin{frame}
+\frametitle{Combinations}
+Let $r$ be a non negative integer. By an $r$-$combination$ of a set $S$ of $n$ elements, we understand an unordered selection of $r$ of the $n$ objects of $S$. If $S= \{a,b,c,d\}$, then
+$$ \{a,b,c\}  , \{a,b,d\} ,\{a,c,d\}, \{b,c,d\}$$
+are the four 3-$cobination$ of $S$.
+We denote by $\binom{n}{r}$ the number of $r$-combinations of an $n$-element set.
+\end{frame}
+
+\section{}
+ \begin{frame}
+\frametitle{Combinations}
+Let $r$ be a non negative integer. By an $r$-$combination$ of a set $S$ of $n$ elements, we understand an unorderd selection of $r$ of the $n$ objects of $S$. If $S= \{a,b,c,d\}$, then
+$$ \{a,b,c\}  , \{a,b,d\} ,\{a,c,d\}, \{b,c,d\}$$
+are the four 3-$cobination$ of $S$.
+We denote by $\binom{n}{r}$ the number of $r$-combinations of an $n$-element set. Obviously,
+     \\ $$\binom{n}{r} = 0 \hspace{1cm} if \hspace{.5cm} r>n.$$
+     also,   $$\binom{0}{r}=0 \hspace{1cm}  if \hspace{.5cm} r>0.$$
+
+\end{frame}
+
+\section{}
+ \begin{frame}
+\frametitle{Combinations}
+ the following additional facts are readily seen to be true for each non-negative integer n:{\vspace{.8cm}}
+    \begin{enumerate}
+		     \item $\binom{n}{0} = 1${\vspace{.4cm}}
+    		 \item $\binom{n}{1} = n${\vspace{.4cm}}
+     		\item $\binom{n}{n} = 1 ${\vspace{.4cm}}
+    		\item $\binom{0}{0} = 1${\vspace{.4cm}}
+    	 \end{enumerate}
+\end{frame}
+
+\section{}
+ \begin{frame}
+\frametitle{Combinations}
+{\bf Theorem :} For  $ 0 \le r \le n,$
+$$P(n,r)=r!{\binom{n}{r}}.$$ 
+Hence,  $$\binom{n}{r} = \frac{n!}{r!(n-r)!}.$$
+\pause
+{\bf Example :} Twenty-five points are chosen in the plane so that no three of them are collinear. How many straight lines do they determine?\\
+ {\bf Ans.} Since no three of the points lie on a line, every pair of points determines a unique straight line. Thus, the number of straight lines determined equals the number of 2-combinations of a 25-element set, and this is given by
+   $$\binom{25}{2}=\frac{25!}{2!23!}=300.$$
+\end{frame}
+
+\section{}
+ \begin{frame}
+\frametitle{Combinations of Multiset}
+If $S$ is a multiset, then an $r$-$combination$ of $S$ is an unordered selection of $r$ of the objects of $S$. Thus, an $r$-combination  of $S$ is itself a multiset, a submultiset of $S$.
+\begin{enumerate}
+\item If $S$ has $n$ objects, then there is is only one $n$-combination of $S$, namely, $S$ itself.
+\item If $S$ contains objects of $k$ different types, then there are $k$ 1-combinations of $S$.
+\end{enumerate}
+\end{frame}
+
+\section{}
+ \begin{frame}
+\frametitle{Combinations of Multiset}
+If $S$ is a multiset, then an $r$-$combination$ of $S$ is an unordered selection of $r$ of the objects of $S$. Thus, an $r$-combination  of $S$ is itself a multiset, a submultiset of $S$.
+\begin{enumerate}
+\item If $S$ has $n$ objects, then there is is only one $n$-combination of $S$, namely, $S$ itself.
+\item If $S$ contains objects of $k$ different types, then there are $k$ 1-combinations of $S$.
+\end{enumerate}
+{\bf Example :} If $S$=$\{2.a, 1.b, 3.c \}$, then the 3-combinations of $S$ are 
+$$\{2.a,1.b\},\hspace{1cm}\{2.a,1.c\},\hspace{1cm}\{1.a,1.b,1.c\},$$
+$$\{1.a,2.c\},\hspace{1cm}\{1.b,2.c\},\hspace{1cm}\{3.c\}.$$
+\end{frame}
+
+\section{}
+ \begin{frame}
+\frametitle{Combinations of Multiset}
+{\bf Theorem :} Let $S$ be a multiset with objects of $k$ types, each with an infinite repetition number. Then the number of $r$-combinations of $S$ equals
+$$\binom{r+k-1}{r}=\binom{r+k-1}{k-1}$$
+\end{frame}
+
+\section{}
+ \begin{frame}
+\frametitle{Combinations of Multiset}
+{\bf Theorem :} Let $S$ be a multiset with objects of $k$ types, each with an infinite repetition number. Then the number of $r$-combinations of $S$ equals
+$$\binom{r+k-1}{r}=\binom{r+k-1}{k-1}$$
+{\bf Example :} A bakery boasts 8 varieties of doughnuts. If a box of doughnuts contain 1 dozen, how many different options are there for a box of doughnuts? \\
+{\bf Ans. } It is assumed that the bakery has on hand a large number (at least 12) of each variety. This is a combination problem, since we assume the of order of the doughnuts in a box is a box is irrelevant for the purchaser's purpose. The number of different options for boxes equals the number of 12-combinations of a multiset with objects of 8 types, each having an infinite repetition number. This number equals \\
+     $$\binom{12+8-1}{12}=\binom{19}{12}$$
+\end{frame}
+
+\section{}
+ \begin{frame}
+\frametitle{Conclusion}
+We have discuss these following topics :{\vspace{.2cm}}
+\begin{enumerate}
+  \item Using the Counting Principles{\vspace{.2cm}}
+  \item Finding the simple way of permutation{\vspace{.2cm}}
+  \item Solving the Problem of Permutation{\vspace{.2cm}}
+  \item Finding the simple way of permutation of Multiset{\vspace{.2cm}}
+  \item Finding the simple way of Combinations{\vspace{.2cm}}
+  \item Solving the Problem of Combinations{\vspace{.2cm}}
+\end{enumerate}
+\end{frame}
+
+\section{References}
+\begin{frame}
+ \frametitle{References}
+ \begin{thebibliography}{5}
+  \bibitem{beamer} \emph{  Richard A. Brualdi: $Introductory$ $Combinatorics$, Fourth edition. Madison: University of Wisconsin, 2008.}{\vspace{.6cm}}
+    \bibitem{beamer2} \emph{C.L.Liu: Elements of Discrete Mathemathics, Second Edition. Urbana-Champaign: University of Illinois, 2000 }{\vspace{.6cm}}
+      \bibitem{beamer2} \emph{Ralph P.Grimaldi: Discrete and Combinatorial Mathematics, Fifth edition.USA: Rose–Hulman Institute of Technology,2003}{\vspace{1cm}}
+ \end{thebibliography}
+ \end{frame}
+ 
+\section{}
+ \begin{frame}
+\frametitle{ Counting principle, Permutation and Combination}
+%\includegraphics[width=\textwidth]{22.png}
+%\includegraphics[width=\textwidth]{download.jpg}
+\includegraphics[width=\textwidth]{Thank-You-Card.jpg}
+\end{frame}
+
+\end{document}
