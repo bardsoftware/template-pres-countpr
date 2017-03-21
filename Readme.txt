@@ -1,10 +1,4 @@
-** EN **
-
 Presentation for M.Sc project, Counting Principles, Permutation and Combination
-
-** RU **
-
-Презентация для защиты мастерской диссертации
 
 ===================================================
 
